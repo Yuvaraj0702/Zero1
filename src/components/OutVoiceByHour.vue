@@ -127,19 +127,38 @@
 			return {
 				chartData: {
 					labels: [
-						"January",
-						"February",
-						"March",
-						"April",
-						"May",
-						"June",
-						"July",
+						"0000",
+						"0100",
+						"0200",
+						"0300",
+						"0400",
+						"0500",
+						"0600",
+						"0700",
+						"0800",
+						"0900",
+						"1000",
+						"1100",
+						"1200",
+						"1300",
+						"1400",
+						"1500",
+						"1600",
+						"1700",
+						"1800",
+						"1900",
+						"2000",
+						"2100",
+						"2200",
+						"2300",
+
+						
 					],
 					datasets: [
 						{
 							label: "Calls",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [],
 						},
 					],
 				},
@@ -165,6 +184,16 @@
 			ouvy(comp) {
 				bus.$emit("ouvy", comp);
 			},
+		},
+		mounted() {
+			fetch("/api//v1/OutVoiceByHour")
+				.then((response) => response.json())
+				.then((datas) => {
+					for (let i = 0; i < 24; i++) {
+						this.chartData.datasets[0].data.push(datas[i].outCallByHour);
+					}
+				});
+			//.then(console.log(this.hi))
 		},
 	};
 </script>
