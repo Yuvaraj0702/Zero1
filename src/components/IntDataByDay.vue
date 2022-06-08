@@ -127,13 +127,13 @@
 			return {
 				chartData: {
 					labels: [
-						"January",
-						"February",
-						"March",
-						"April",
-						"May",
-						"June",
-						"July",
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday",
+						"Saturday",
+						"Sunday",
 					],
 					datasets: [
 						{

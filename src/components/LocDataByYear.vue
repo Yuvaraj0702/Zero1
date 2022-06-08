@@ -126,15 +126,7 @@
 		data() {
 			return {
 				chartData: {
-					labels: [
-						"January",
-						"February",
-						"March",
-						"April",
-						"May",
-						"June",
-						"July",
-					],
+					labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
 					datasets: [
 						{
 							label: "Data",

@@ -134,12 +134,19 @@
 						"May",
 						"June",
 						"July",
+						"August",
+						"September",
+						"October",
+						"November",
+						"December",
 					],
 					datasets: [
 						{
 							label: "Calls",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [
+								400, 310, 100, 400, 390, 800, 400, 943, 453, 678, 443, 867,
+							],
 						},
 					],
 				},

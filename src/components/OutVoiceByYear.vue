@@ -126,20 +126,12 @@
 		data() {
 			return {
 				chartData: {
-					labels: [
-						"January",
-						"February",
-						"March",
-						"April",
-						"May",
-						"June",
-						"July",
-					],
+					labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
 					datasets: [
 						{
 							label: "Calls",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [4078, 3976, 1032, 4076, 3963, 8000],
 						},
 					],
 				},
