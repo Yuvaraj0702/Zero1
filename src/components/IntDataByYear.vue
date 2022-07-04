@@ -138,7 +138,7 @@
 						{
 							label: "Data",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [],
 						},
 					],
 				},
@@ -164,6 +164,16 @@
 			idd(comp) {
 				bus.$emit("idd", comp);
 			},
+		},
+		mounted() {
+			fetch("/api/v1/IntDataByYear")
+				.then((response) => response.json())
+				.then((datas) => {
+					for (let i = 0; i < 7; i++) {
+						this.chartData.datasets[0].data.push(datas[i].intDataByYear);
+					}
+				});
+			//.then(console.log(this.hi))
 		},
 	};
 </script>

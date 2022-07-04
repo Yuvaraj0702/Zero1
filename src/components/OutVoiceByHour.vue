@@ -116,7 +116,7 @@
 			},
 			styles: {
 				type: Object,
-				default: () => {},
+				default: () => { /* TODO document why this method 'default' is empty */ },
 			},
 			plugins: {
 				type: Array,

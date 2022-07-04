@@ -144,7 +144,7 @@
 						{
 							label: "Calls",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [],
 						},
 					],
 				},
@@ -171,5 +171,16 @@
 				bus.$emit("invh", comp);
 			},
 		},
+		mounted() {
+			fetch("/api//v1/IncVoiceByMonth")
+				.then((response) => response.json())
+				.then((datas) => {
+					for (let i = 0; i < 24; i++) {
+						console.log(datas[i]);
+						this.chartData.datasets[0].data.push(datas[i].incCallByMonth);
+					}
+				});
+			//.then(console.log(this.hi))
+		}
 	};
 </script>
