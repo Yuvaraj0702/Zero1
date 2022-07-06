@@ -156,7 +156,7 @@
 						{
 							label: "SMS",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [],
 						},
 					],
 				},
@@ -182,6 +182,16 @@
 			insh(comp) {
 				bus.$emit("insh", comp);
 			},
+		},
+		mounted() {
+			fetch("/api/v1/IntSMSbyHour")
+				.then((response) => response.json())
+				.then((datas) => {
+					for (let i = 0; i < 20; i++) {
+						this.chartData.datasets[0].data.push(datas[i].intSMSbyHour);
+					}
+				});
+			//.then(console.log(this.hi))
 		},
 	};
 </script>

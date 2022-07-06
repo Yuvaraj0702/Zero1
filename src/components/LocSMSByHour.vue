@@ -156,7 +156,7 @@
 						{
 							label: "Data",
 							backgroundColor: "red",
-							data: [40, 39, 10, 40, 39, 80, 40],
+							data: [],
 						},
 					],
 				},
@@ -182,6 +182,16 @@
 			ldh(comp) {
 				bus.$emit("ldh", comp);
 			},
+		},
+		mounted() {
+			fetch("/api/v1/LocSMSbyHour")
+				.then((response) => response.json())
+				.then((datas) => {
+					for (let i = 0; i < 20; i++) {
+						this.chartData.datasets[0].data.push(datas[i].locSMSbyHour);
+					}
+				});
+			//.then(console.log(this.hi))
 		},
 	};
 </script>
