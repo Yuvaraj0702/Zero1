@@ -29,6 +29,7 @@
 				text
 				onclick="window.location.href = 'https://loginlogout-e3023.firebaseapp.com/';"
 			>
+				<!-- Localhost 3000 or your port hosting the login page -->
 				<!-- this is to -->
 				Back to portal
 				<v-icon color="white" small right>mdi-logout-variant</v-icon>
