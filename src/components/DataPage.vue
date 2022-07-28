@@ -55,7 +55,7 @@
 	</v-container>
 </template>
 <script>
-	import { bus } from "C:/Users/Yuvaraj/dashboardnew/src/main.js";
+	import { bus } from "../main.js";
 	export default {
 		name: "AppPage",
 
