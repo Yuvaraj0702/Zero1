@@ -184,11 +184,11 @@
 			},
 		},
 		mounted() {
-			fetch("/api//v1/LocDataByHour")
+			fetch("/api/v1/usage_data_hourly")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 10; i++) {
-						this.chartData.datasets[0].data.push(datas[i].locDataByHour);
+						this.chartData.datasets[0].data.push((Number(datas[i].value/1024)/1024)/1024);
 					}
 				});
 			//.then(console.log(this.hi))

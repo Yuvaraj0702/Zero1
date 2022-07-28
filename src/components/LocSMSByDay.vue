@@ -167,11 +167,11 @@
 			},
 		},
 		mounted() {
-			fetch("/api/v1/LocSMSbyDay")
+			fetch("/api/v1/usage_sout_daily")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 20; i++) {
-						this.chartData.datasets[0].data.push(datas[i].locSMSbyDay);
+						this.chartData.datasets[0].data.push(datas[i].value);
 					}
 				});
 			//.then(console.log(this.hi))

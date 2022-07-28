@@ -167,11 +167,12 @@
 			},
 		},
 		mounted() {
-			fetch("/api/v1/LocDataByDay")
+			fetch("/api/v1/usage_data_daily")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 7; i++) {
-						this.chartData.datasets[0].data.push(datas[i].locDataByDay);
+						this.chartData.datasets[0].data.push((Number(datas[i].value/1024)/1024)/1024);
+						console.log(datas.value);
 					}
 				});
 			//.then(console.log(this.hi))

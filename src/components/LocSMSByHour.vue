@@ -184,11 +184,11 @@
 			},
 		},
 		mounted() {
-			fetch("/api/v1/LocSMSbyHour")
+			fetch("/api/v1/usage_sout_hourly")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 20; i++) {
-						this.chartData.datasets[0].data.push(datas[i].locSMSbyHour);
+						this.chartData.datasets[0].data.push(datas[i].value);
 					}
 				});
 			//.then(console.log(this.hi))

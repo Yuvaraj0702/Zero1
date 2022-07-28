@@ -167,12 +167,12 @@
 			},
 		},
 		mounted() {
-			fetch("/api//v1/IncVoiceByDay")
+			fetch("/api/v1/usage_vin_daily")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 24; i++) {
 						console.log(datas[i]);
-						this.chartData.datasets[0].data.push(datas[i].incCallByDay);
+						this.chartData.datasets[0].data.push(datas[i].value/60);
 					}
 				});
 			//.then(console.log(this.hi))

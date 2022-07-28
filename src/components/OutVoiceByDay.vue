@@ -170,11 +170,11 @@
 			},
 		},
 		mounted() {
-			fetch("/api/v1/OutVoiceByDay")
+			fetch("/api/v1/usage_vout_daily")
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 7; i++) {
-						this.chartData.datasets[0].data.push(datas[i].outCallByDay);
+						this.chartData.datasets[0].data.push(datas[i].value/60);
 					}
 				});
 			//.then(console.log(this.hi))
