@@ -54,7 +54,7 @@
 </template>
 
 <script>
-	import { bus } from "C:/Users/Yuvaraj/dashboardnew/src/main.js";
+	import { bus } from "../main.js";
 	import VoicePage from "./VoicePage.vue";
 	import RoamingPage from "./RoamingPage.vue";
 	import SMS from "./SMS.vue";
