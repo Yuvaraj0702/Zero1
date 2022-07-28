@@ -30,7 +30,7 @@
 				onclick="window.location.href = 'https://loginlogout-e3023.firebaseapp.com/';"
 			>
 				<!-- this is to -->
-				Sign Out
+				Back to portal
 				<v-icon color="white" small right>mdi-logout-variant</v-icon>
 			</v-btn>
 
