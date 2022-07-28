@@ -78,17 +78,7 @@
 
 		components: {},
 
-		data: () => ({
-			// component: LoginPage,
-		}),
-		//   created() {
-		//     bus.$on("switchToMain", () => {
-		//       this.component = MainPage;
-		//     });
-		//       bus.$on("switchToLogin", () => {
-		//       this.component = LoginPage;
-		//     });
-		//   },
+		data: () => ({}),
 
 		methods: {
 			gotoout(comp) {

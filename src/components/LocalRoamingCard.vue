@@ -72,12 +72,15 @@
 					{ text: "Mins called from plan 2", value: "mincCalled2" },
 					{ text: "Mins called from plan 3", value: "mincCalled3" },
 				],
-				desserts: [
-				],
+				desserts: [],
 			};
 		},
-		mounted(){
-				fetch("/api/v1/LocRoaming").then((response) =>response.json()).then((data) => {this.desserts=data;})
+		mounted() {
+			fetch("/api/v1/LocRoaming")
+				.then((response) => response.json())
+				.then((data) => {
+					this.desserts = data;
+				});
 		},
 		methods: {
 			gotoroam(comp) {

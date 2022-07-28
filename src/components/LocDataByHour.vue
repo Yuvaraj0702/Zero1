@@ -188,10 +188,11 @@
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 10; i++) {
-						this.chartData.datasets[0].data.push((Number(datas[i].value/1024)/1024)/1024);
+						this.chartData.datasets[0].data.push(
+							Number(datas[i].value / 1024) / 1024 / 1024
+						);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>

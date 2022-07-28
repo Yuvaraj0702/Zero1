@@ -189,10 +189,9 @@
 				.then((datas) => {
 					for (let i = 0; i < 24; i++) {
 						console.log(datas[i]);
-						this.chartData.datasets[0].data.push(datas[i].value/60);
+						this.chartData.datasets[0].data.push(datas[i].value / 60);
 					}
 				});
-			//.then(console.log(this.hi))
-		}
+		},
 	};
 </script>
