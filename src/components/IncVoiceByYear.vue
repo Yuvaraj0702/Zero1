@@ -126,14 +126,7 @@
 		data() {
 			return {
 				chartData: {
-					labels: [
-						"2017",
-						"2018",
-						"2019",
-						"2020",
-						"2021",
-						"2022",
-					],
+					labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
 					datasets: [
 						{
 							label: "Calls",
@@ -174,7 +167,6 @@
 						this.chartData.datasets[0].data.push(datas[i].incCallByYear);
 					}
 				});
-			//.then(console.log(this.hi))
-		}
+		},
 	};
 </script>

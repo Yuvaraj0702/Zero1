@@ -180,7 +180,6 @@
 						this.chartData.datasets[0].data.push(datas[i].incCallByMonth);
 					}
 				});
-			//.then(console.log(this.hi))
-		}
+		},
 	};
 </script>

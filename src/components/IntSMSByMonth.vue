@@ -179,7 +179,6 @@
 						this.chartData.datasets[0].data.push(datas[i].intSMSbyMonth);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>

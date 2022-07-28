@@ -174,10 +174,9 @@
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 7; i++) {
-						this.chartData.datasets[0].data.push(datas[i].value/60);
+						this.chartData.datasets[0].data.push(datas[i].value / 60);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>

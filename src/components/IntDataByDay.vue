@@ -174,7 +174,6 @@
 						this.chartData.datasets[0].data.push(datas[i].intDataByDay);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>

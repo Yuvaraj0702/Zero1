@@ -166,7 +166,6 @@
 						this.chartData.datasets[0].data.push(datas[i].locDataByYear);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>

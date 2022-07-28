@@ -116,7 +116,9 @@
 			},
 			styles: {
 				type: Object,
-				default: () => { /* TODO document why this method 'default' is empty */ },
+				default: () => {
+					/* TODO document why this method 'default' is empty */
+				},
 			},
 			plugins: {
 				type: Array,
@@ -151,8 +153,6 @@
 						"2100",
 						"2200",
 						"2300",
-
-						
 					],
 					datasets: [
 						{
@@ -190,7 +190,7 @@
 				.then((response) => response.json())
 				.then((datas) => {
 					for (let i = 0; i < 24; i++) {
-						this.chartData.datasets[0].data.push(datas[i].value/60);
+						this.chartData.datasets[0].data.push(datas[i].value / 60);
 					}
 				});
 			//.then(console.log(this.hi))

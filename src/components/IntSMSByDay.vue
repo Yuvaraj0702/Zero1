@@ -174,7 +174,6 @@
 						this.chartData.datasets[0].data.push(datas[i].intSMSbyDay);
 					}
 				});
-			//.then(console.log(this.hi))
 		},
 	};
 </script>
