@@ -5,9 +5,9 @@
 </template>
 
 <script>
-	import { bus } from "C:/Users/Yuvaraj/dashboardnew/src/main.js";
-	import LoginPage from "C:/Users/Yuvaraj/dashboardnew/src/components/LoginPage.vue";
-	import MainPage from "C:/Users/Yuvaraj/dashboardnew/src/components/MainPage.vue";
+	import { bus } from "./main.js";
+	import LoginPage from "./components/LoginPage.vue";
+	import MainPage from "./components/MainPage.vue";
 
 	export default {
 		name: "AppPage",

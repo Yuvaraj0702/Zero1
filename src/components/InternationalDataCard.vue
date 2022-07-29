@@ -8,7 +8,7 @@
 
 <script>
 	import { Line as LineChartGenerator } from "vue-chartjs/legacy";
-	import { bus } from "C:/Users/Yuvaraj/dashboardnew/src/main.js";
+	import { bus } from "../main.js";
 	import IntDataByDayVue from "./IntDataByDay.vue";
 	import IntDataByHourVue from "./IntDataByHour.vue";
 	import IntDataByMonthVue from "./IntDataByMonth.vue";
