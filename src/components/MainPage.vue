@@ -27,7 +27,7 @@
 			<v-btn
 				large
 				text
-				onclick="window.location.href = 'https://loginlogout-e3023.firebaseapp.com/';"
+				onclick="window.location.href = 'http://localhost:3001/';"
 			>
 				<!-- Localhost 3000 or your port hosting the login page -->
 				<!-- this is to -->
